@@ -1,25 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-26T18:37:39 IST" name="Default suite" finished-at="2026-01-26T18:38:04 IST" duration-ms="25352">
+  <suite started-at="2026-01-31T13:57:52 IST" name="Suite" finished-at="2026-01-31T13:58:30 IST" duration-ms="37586">
     <groups>
     </groups>
-    <test started-at="2026-01-26T18:37:39 IST" name="Default test" finished-at="2026-01-26T18:38:04 IST" duration-ms="25352">
-      <class name="test.registration.testNegativeRegistration">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.registration.testNegativeRegistration@305b7c14]" started-at="2026-01-26T18:37:39 IST" name="setup" finished-at="2026-01-26T18:38:03 IST" duration-ms="23743" status="PASS">
+    <test started-at="2026-01-31T13:57:52 IST" name="Test" finished-at="2026-01-31T13:58:30 IST" duration-ms="37586">
+      <class name="test.registration.testRegistration">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.registration.testRegistration@445b295b]" started-at="2026-01-31T13:58:11 IST" name="setup" finished-at="2026-01-31T13:58:27 IST" duration-ms="15770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="emptyFields()[pri:0, instance:test.registration.testNegativeRegistration@305b7c14]" started-at="2026-01-26T18:38:03 IST" name="emptyFields" finished-at="2026-01-26T18:38:04 IST" duration-ms="1081" status="PASS">
+        <test-method signature="testRegister()[pri:0, instance:test.registration.testRegistration@445b295b]" started-at="2026-01-31T13:58:27 IST" name="testRegister" finished-at="2026-01-31T13:58:29 IST" duration-ms="2072" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- emptyFields -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test.registration.testNegativeRegistration@305b7c14]" started-at="2026-01-26T18:38:04 IST" name="teardown" finished-at="2026-01-26T18:38:04 IST" duration-ms="495" status="PASS">
+        </test-method> <!-- testRegister -->
+        <test-method signature="logout()[pri:1, instance:test.registration.testRegistration@445b295b]" started-at="2026-01-31T13:58:29 IST" name="logout" finished-at="2026-01-31T13:58:29 IST" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.registration.testRegistration@445b295b]" started-at="2026-01-31T13:58:29 IST" name="teardown" finished-at="2026-01-31T13:58:30 IST" duration-ms="456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- test.registration.testNegativeRegistration -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- test.registration.testRegistration -->
+      <class name="test.homepage.testHomePage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:57:52 IST" name="setup" finished-at="2026-01-31T13:58:09 IST" duration-ms="16432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyPageTitle()[pri:0, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:09 IST" name="verifyPageTitle" finished-at="2026-01-31T13:58:09 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method signature="verifyLogo()[pri:1, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:09 IST" name="verifyLogo" finished-at="2026-01-31T13:58:09 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogo -->
+        <test-method signature="searchBar()[pri:2, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:09 IST" name="searchBar" finished-at="2026-01-31T13:58:09 IST" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBar -->
+        <test-method signature="navigator()[pri:3, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:09 IST" name="navigator" finished-at="2026-01-31T13:58:09 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigator -->
+        <test-method signature="navHover(java.lang.String,java.lang.String)[pri:4, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:09 IST" name="navHover" data-provider="categoryData" finished-at="2026-01-31T13:58:09 IST" duration-ms="478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Desktops]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//a[@href='https://tutorialsninja.com/demo/index.php?route=product/category&path=20' and @class='dropdown-toggle']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navHover -->
+        <test-method signature="navHover(java.lang.String,java.lang.String)[pri:4, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:09 IST" name="navHover" data-provider="categoryData" finished-at="2026-01-31T13:58:10 IST" duration-ms="435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Laptops]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//a[@href='https://tutorialsninja.com/demo/index.php?route=product/category&path=18' and @class='dropdown-toggle']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navHover -->
+        <test-method signature="navHover(java.lang.String,java.lang.String)[pri:4, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:10 IST" name="navHover" data-provider="categoryData" finished-at="2026-01-31T13:58:10 IST" duration-ms="436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Components]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//a[@href='https://tutorialsninja.com/demo/index.php?route=product/category&path=25' and @class='dropdown-toggle']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navHover -->
+        <test-method signature="navHover(java.lang.String,java.lang.String)[pri:4, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:10 IST" name="navHover" data-provider="categoryData" finished-at="2026-01-31T13:58:11 IST" duration-ms="435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MP3 Players]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//a[@href='https://tutorialsninja.com/demo/index.php?route=product/category&path=34' and @class='dropdown-toggle']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navHover -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:11 IST" name="teardown" finished-at="2026-01-31T13:58:11 IST" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="updateReport()[pri:0, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:30 IST" name="updateReport" finished-at="2026-01-31T13:58:30 IST" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateReport -->
+      </class> <!-- test.homepage.testHomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

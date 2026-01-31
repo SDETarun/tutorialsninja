@@ -1,4 +1,4 @@
-package pages.homepage;
+package test.homepage;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -11,28 +11,62 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import base.BaseTest;
 
-public class homepage extends BaseTest {
+public class testHomePage extends BaseTest {
 
-	@Test
+	@Test(priority = 0)
 	public void verifyPageTitle() {
+		test = extent.createTest("Verify Page Title");
+		test.assignCategory("Home Page");
+		test.info("Verifying page info");
+		
 		String originalTitle = driver.getTitle();
 		String expectedTitle = "Your Store";
 		Assert.assertEquals(originalTitle, expectedTitle);
+		
+		test.pass("Verify Page Title test completed successfully");
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void verifyLogo() {
+		test = extent.createTest("Verify Logo");
+		test.assignCategory("Home Page");
+		test.info("Verifying logo");
+		
 		WebElement logo = driver.findElement(By.xpath("//a[@href = 'https://tutorialsninja.com/demo/index.php?route=common/home']"));
 		Assert.assertTrue(logo.isDisplayed());
+		
+		test.pass("Verify logo test completed successfully");
+	}
+	
+	@Test(priority = 2)
+	public void searchBar() throws IOException {
+		test = extent.createTest("Verify Search Bar");
+		test.assignCategory("Home Page");
+		test.info("Verifying search bar");
+		
+		Properties locator = new Properties();
+		locator.load(getClass().getResourceAsStream("/locators.properties"));
+		
+		WebElement searchBar = driver.findElement(By.xpath(locator.getProperty("searchBar.link")));
+		Assert.assertTrue(searchBar.isDisplayed());
+		Assert.assertTrue(searchBar.isEnabled());
+		test.pass("Verify seacrh bar test completed successfully");
 	}
 
-	@Test
+	@Test(priority = 3)
 	public void navigator() throws IOException {
+		
+		test = extent.createTest("Verify Navigator");
+		test.assignCategory("Home Page");
+		test.info("Verifying navigator");
+		
 		Properties locator = new Properties();
         locator.load(getClass().getResourceAsStream("/locators.properties"));
         
 		WebElement navigator = driver.findElement(By.xpath(locator.getProperty("navigator.link")));
 		Assert.assertTrue(navigator.isDisplayed());
+
+		test.pass("Verify navigator test completed successfully");
 	}
 	
 	@DataProvider(name = "categoryData")
@@ -50,23 +84,19 @@ public class homepage extends BaseTest {
 	    return testData;
 	}
 
-	@Test (dataProvider = "categoryData")
+	@Test (dataProvider = "categoryData", priority = 4)
 	public void navHover (String categoryName, String xpath) throws InterruptedException {
+		test = extent.createTest("Verify Hover on Navigator");
+		test.assignCategory("Home Page");
+		test.info("Verifying haver on navigator");
+		
 		Actions act = new Actions(driver);
 		WebElement hover = driver.findElement(By.xpath(xpath));
 		act.moveToElement(hover).perform();
 		Thread.sleep(300);
 		//hover.click();
 		//driver.navigate().back();
-	}
-	
-	@Test
-	public void searchBar() throws IOException {
-		Properties locator = new Properties();
-		locator.load(getClass().getResourceAsStream("locator.properties"));
 		
-		WebElement searchBar = driver.findElement(By.xpath(locator.getProperty("searchBar.link")));
-		Assert.assertTrue(searchBar.isDisplayed());
-		Assert.assertTrue(searchBar.isEnabled());
+		test.pass("Verify navigator hover test completed successfully");
 	}
 }

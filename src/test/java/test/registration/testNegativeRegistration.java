@@ -8,7 +8,7 @@ import base.BaseTest;
 
 public class testNegativeRegistration extends BaseTest {
 
-	@Test
+	@Test(priority = 1)
 	public void duplicateRegister() throws IOException {
 
 		pages.registration.pageRegistration regPage = new pages.registration.pageRegistration();
@@ -40,7 +40,7 @@ public class testNegativeRegistration extends BaseTest {
 		regPage.backPage(driver);
 	}
 	
-	@Test
+	@Test(priority = 0)
 	public void emptyFields() throws IOException{
 		pages.registration.pageRegistration regPage = new pages.registration.pageRegistration();
 		regPage.clickButton(driver, "myAccount.link");
@@ -49,6 +49,5 @@ public class testNegativeRegistration extends BaseTest {
 		regPage.clickButton(driver, "continue.link");
 
 		regPage.assertData(driver, "emailRegisteredWarning");
-		//Update
 	}
 }
