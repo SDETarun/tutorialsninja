@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-31T13:57:52 IST" name="Suite" finished-at="2026-01-31T13:58:30 IST" duration-ms="37586">
+  <suite started-at="2026-01-31T23:29:57 IST" name="Suite" finished-at="2026-01-31T23:31:01 IST" duration-ms="63907">
     <groups>
     </groups>
-    <test started-at="2026-01-31T13:57:52 IST" name="Test" finished-at="2026-01-31T13:58:30 IST" duration-ms="37586">
+    <test started-at="2026-01-31T23:29:57 IST" name="Test" finished-at="2026-01-31T23:31:01 IST" duration-ms="63907">
       <class name="test.registration.testRegistration">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.registration.testRegistration@445b295b]" started-at="2026-01-31T13:58:11 IST" name="setup" finished-at="2026-01-31T13:58:27 IST" duration-ms="15770" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.registration.testRegistration@757277dc]" started-at="2026-01-31T23:30:22 IST" name="setup" finished-at="2026-01-31T23:30:39 IST" duration-ms="16874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testRegister()[pri:0, instance:test.registration.testRegistration@445b295b]" started-at="2026-01-31T13:58:27 IST" name="testRegister" finished-at="2026-01-31T13:58:29 IST" duration-ms="2072" status="PASS">
+        <test-method signature="testRegister()[pri:0, instance:test.registration.testRegistration@757277dc]" started-at="2026-01-31T23:30:39 IST" name="testRegister" finished-at="2026-01-31T23:30:40 IST" duration-ms="945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegister -->
-        <test-method signature="logout()[pri:1, instance:test.registration.testRegistration@445b295b]" started-at="2026-01-31T13:58:29 IST" name="logout" finished-at="2026-01-31T13:58:29 IST" duration-ms="436" status="PASS">
+        <test-method signature="logout()[pri:1, instance:test.registration.testRegistration@757277dc]" started-at="2026-01-31T23:30:40 IST" name="logout" finished-at="2026-01-31T23:30:41 IST" duration-ms="1434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test.registration.testRegistration@445b295b]" started-at="2026-01-31T13:58:29 IST" name="teardown" finished-at="2026-01-31T13:58:30 IST" duration-ms="456" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.registration.testRegistration@757277dc]" started-at="2026-01-31T23:30:41 IST" name="teardown" finished-at="2026-01-31T23:30:42 IST" duration-ms="489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- test.registration.testRegistration -->
       <class name="test.homepage.testHomePage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:57:52 IST" name="setup" finished-at="2026-01-31T13:58:09 IST" duration-ms="16432" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.homepage.testHomePage@561b6512]" started-at="2026-01-31T23:29:58 IST" name="setup" finished-at="2026-01-31T23:30:20 IST" duration-ms="22241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyPageTitle()[pri:0, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:09 IST" name="verifyPageTitle" finished-at="2026-01-31T13:58:09 IST" duration-ms="30" status="PASS">
+        <test-method signature="verifyPageTitle()[pri:0, instance:test.homepage.testHomePage@561b6512]" started-at="2026-01-31T23:30:20 IST" name="verifyPageTitle" finished-at="2026-01-31T23:30:20 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method signature="verifyLogo()[pri:1, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:09 IST" name="verifyLogo" finished-at="2026-01-31T13:58:09 IST" duration-ms="35" status="PASS">
+        <test-method signature="verifyLogo()[pri:1, instance:test.homepage.testHomePage@561b6512]" started-at="2026-01-31T23:30:20 IST" name="verifyLogo" finished-at="2026-01-31T23:30:20 IST" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogo -->
-        <test-method signature="searchBar()[pri:2, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:09 IST" name="searchBar" finished-at="2026-01-31T13:58:09 IST" duration-ms="33" status="PASS">
+        <test-method signature="searchBar()[pri:2, instance:test.homepage.testHomePage@561b6512]" started-at="2026-01-31T23:30:20 IST" name="searchBar" finished-at="2026-01-31T23:30:20 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBar -->
-        <test-method signature="navigator()[pri:3, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:09 IST" name="navigator" finished-at="2026-01-31T13:58:09 IST" duration-ms="23" status="PASS">
+        <test-method signature="navigator()[pri:3, instance:test.homepage.testHomePage@561b6512]" started-at="2026-01-31T23:30:20 IST" name="navigator" finished-at="2026-01-31T23:30:20 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigator -->
-        <test-method signature="navHover(java.lang.String,java.lang.String)[pri:4, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:09 IST" name="navHover" data-provider="categoryData" finished-at="2026-01-31T13:58:09 IST" duration-ms="478" status="PASS">
+        <test-method signature="navHover(java.lang.String,java.lang.String)[pri:4, instance:test.homepage.testHomePage@561b6512]" started-at="2026-01-31T23:30:20 IST" name="navHover" data-provider="categoryData" finished-at="2026-01-31T23:30:20 IST" duration-ms="461" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,7 +61,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navHover -->
-        <test-method signature="navHover(java.lang.String,java.lang.String)[pri:4, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:09 IST" name="navHover" data-provider="categoryData" finished-at="2026-01-31T13:58:10 IST" duration-ms="435" status="PASS">
+        <test-method signature="navHover(java.lang.String,java.lang.String)[pri:4, instance:test.homepage.testHomePage@561b6512]" started-at="2026-01-31T23:30:20 IST" name="navHover" data-provider="categoryData" finished-at="2026-01-31T23:30:21 IST" duration-ms="450" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,7 +77,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navHover -->
-        <test-method signature="navHover(java.lang.String,java.lang.String)[pri:4, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:10 IST" name="navHover" data-provider="categoryData" finished-at="2026-01-31T13:58:10 IST" duration-ms="436" status="PASS">
+        <test-method signature="navHover(java.lang.String,java.lang.String)[pri:4, instance:test.homepage.testHomePage@561b6512]" started-at="2026-01-31T23:30:21 IST" name="navHover" data-provider="categoryData" finished-at="2026-01-31T23:30:21 IST" duration-ms="455" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -93,7 +93,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navHover -->
-        <test-method signature="navHover(java.lang.String,java.lang.String)[pri:4, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:10 IST" name="navHover" data-provider="categoryData" finished-at="2026-01-31T13:58:11 IST" duration-ms="435" status="PASS">
+        <test-method signature="navHover(java.lang.String,java.lang.String)[pri:4, instance:test.homepage.testHomePage@561b6512]" started-at="2026-01-31T23:30:21 IST" name="navHover" data-provider="categoryData" finished-at="2026-01-31T23:30:22 IST" duration-ms="436" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -109,15 +109,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navHover -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:11 IST" name="teardown" finished-at="2026-01-31T13:58:11 IST" duration-ms="452" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.homepage.testHomePage@561b6512]" started-at="2026-01-31T23:30:22 IST" name="teardown" finished-at="2026-01-31T23:30:22 IST" duration-ms="468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="updateReport()[pri:0, instance:test.homepage.testHomePage@192c3f1e]" started-at="2026-01-31T13:58:30 IST" name="updateReport" finished-at="2026-01-31T13:58:30 IST" duration-ms="324" status="PASS">
+        <test-method is-config="true" signature="updateReport()[pri:0, instance:test.homepage.testHomePage@561b6512]" started-at="2026-01-31T23:31:01 IST" name="updateReport" finished-at="2026-01-31T23:31:02 IST" duration-ms="388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateReport -->
       </class> <!-- test.homepage.testHomePage -->
+      <class name="test.registration.testNegativeRegistration">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.registration.testNegativeRegistration@687e99d8]" started-at="2026-01-31T23:30:42 IST" name="setup" finished-at="2026-01-31T23:30:58 IST" duration-ms="16278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="emptyFields()[pri:0, instance:test.registration.testNegativeRegistration@687e99d8]" started-at="2026-01-31T23:30:58 IST" name="emptyFields" finished-at="2026-01-31T23:30:59 IST" duration-ms="1217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyFields -->
+        <test-method signature="duplicateRegister()[pri:1, instance:test.registration.testNegativeRegistration@687e99d8]" started-at="2026-01-31T23:30:59 IST" name="duplicateRegister" finished-at="2026-01-31T23:31:01 IST" duration-ms="1524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- duplicateRegister -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.registration.testNegativeRegistration@687e99d8]" started-at="2026-01-31T23:31:01 IST" name="teardown" finished-at="2026-01-31T23:31:01 IST" duration-ms="460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.registration.testNegativeRegistration -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
