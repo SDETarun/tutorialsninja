@@ -5,7 +5,7 @@
     <classes>
       <class name="test.homepage.testHomePage"/>
       <class name="test.registration.testRegistration"/>
-      <!--class name="test.registration.testNegativeRegistration"/ -->
+      <class name="test.registration.testNegativeRegistration"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

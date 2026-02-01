@@ -11,6 +11,10 @@ public class testNegativeRegistration extends BaseTest {
 	@Test(priority = 1)
 	public void duplicateRegister() throws IOException {
 
+		test = extent.createTest("Duplicate Registration Test");
+		test.assignCategory("Test Negative Registration Scenario");
+		test.info("Verifying duplicate registration test");
+		
 		pages.registration.pageRegistration regPage = new pages.registration.pageRegistration();
 		regPage.clickButton(driver, "myAccount.link");
 		regPage.clickButton(driver, "registrationLink.link");
@@ -38,10 +42,18 @@ public class testNegativeRegistration extends BaseTest {
 		regPage.assertData(driver, "emailRegisteredWarning");
 		
 		regPage.backPage(driver);
+		
+		test.pass("Verify dupliate registration completed successfully");
+
 	}
 	
 	@Test(priority = 0)
 	public void emptyFields() throws IOException{
+		
+		test = extent.createTest("Empty Fields Registration Test");
+		test.assignCategory("Test Negative Registration Scenario");
+		test.info("Verifying empty fields");
+		
 		pages.registration.pageRegistration regPage = new pages.registration.pageRegistration();
 		regPage.clickButton(driver, "myAccount.link");
 		regPage.clickButton(driver, "registrationLink.link");
@@ -49,5 +61,7 @@ public class testNegativeRegistration extends BaseTest {
 		regPage.clickButton(driver, "continue.link");
 
 		regPage.assertData(driver, "emailRegisteredWarning");
+		
+		test.pass("Verify empty fields completed successfully");
 	}
 }

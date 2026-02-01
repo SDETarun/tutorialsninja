@@ -88,7 +88,7 @@ public class testHomePage extends BaseTest {
 	public void navHover (String categoryName, String xpath) throws InterruptedException {
 		test = extent.createTest("Verify Hover on Navigator");
 		test.assignCategory("Home Page");
-		test.info("Verifying haver on navigator");
+		test.info("Verifying hover on navigator");
 		
 		Actions act = new Actions(driver);
 		WebElement hover = driver.findElement(By.xpath(xpath));
