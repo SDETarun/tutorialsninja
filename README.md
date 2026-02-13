@@ -115,7 +115,7 @@ tutorialsninja
 Clone repository:
 
 ```
-git clone [https://github.com/your-username/tutorialsninja.git](https://github.com/SDETarun/tutorialsninja.git)
+git clone https://github.com/SDETarun/tutorialsninja.git
 cd tutorialsninja
 ```
 
