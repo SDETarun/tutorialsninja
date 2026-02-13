@@ -105,9 +105,6 @@ tutorialsninja
 │   ├── config.properties
 │   └── locators.properties
 │
-├── reports
-│   └── ExtentReport.html
-│
 └── screenshots
 ```
 
