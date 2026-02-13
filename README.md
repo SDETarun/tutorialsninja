@@ -284,7 +284,7 @@ jobs:
 ## Author
 
 Tarun Naudiyal
-Automation Test Engineer
+Software Test Engineer
 
 Skills:
 
@@ -293,18 +293,6 @@ Skills:
 * TestNG
 * Automation Framework Design
 * CI/CD Integration
-
----
-
-## How This Helps Recruiters
-
-This framework demonstrates:
-
-* Real-world automation skills
-* Framework design capability
-* CI/CD readiness
-* Industry best practices
-* Reporting integration
 
 ---
 
